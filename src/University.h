@@ -7,7 +7,7 @@
 
 class University {
 private:
-    string name;
+    T data;
     Professor* professor;
     Administrative* administrative;
     vector<Professor> professorList;
@@ -19,8 +19,7 @@ public:
     University(const string &name);
     University();
     virtual ~University();
-    const string &getName() const;
-    void setName(const string &name);
+    const string &getData() const;
     Professor *getProfessor() const;
     void setProfessor(Professor *professor);
     Administrative *getAdministrative() const;
