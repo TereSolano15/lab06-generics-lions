@@ -57,9 +57,4 @@ void University::insert(T* dato){
     push_back(dato);
 }
 
-//template<class T>
-//void Lista<T>::ingresarPrimero(T* dato) {
-  //  primero = new Nodo<T>(dato, primero);
-//}
-
 

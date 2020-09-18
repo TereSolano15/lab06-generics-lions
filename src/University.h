@@ -28,7 +28,7 @@ public:
     const vector<Professor> getListProfessor();
     template <class T>
     void insert(T*);
-    
+
 
 
 };
