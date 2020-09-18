@@ -16,11 +16,11 @@ University<T>::~University() {
 }
 template <class T>
 const string &University<T>::getData() const {
-    return data;
+    return lista;
 }
 
 template<class T>
-void University<T>::insert(T* data){
+void University<T>::agregar(T* data){
     push_back(data);
 }
 
