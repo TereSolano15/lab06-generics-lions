@@ -53,8 +53,8 @@ const vector<Professor> University::getListProfessor() {
 }
 
 template<class T>
-void insert<T>::insert(T* dato){
-    administrativeList.push_back(admin);
+void University<T>::insert(T* dato){
+    push_back(dato);
 }
 
 //template<class T>
