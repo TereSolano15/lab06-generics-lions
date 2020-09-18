@@ -8,5 +8,11 @@
 #include "gtest/gtest.h"
 
 TEST(UniversityTestSuite, VerifyUniversityProcess){
+    Professor* p1 = new Professor("Antonio", "Banderas", 1, 2, 3);
+   vector<Professor> professorlist;
+
+
+
+
 
 }
