@@ -1,41 +1,46 @@
-#ifndef UNIT_TESTING_01_GTEST_PERSON_H
-#define UNIT_TESTING_01_GTEST_PERSON_H
+//
+// Created by Maikol Guzman on 8/2/20.
+//
+
+#ifndef LAB02_OOP_PERSON_H
+#define LAB02_OOP_PERSON_H
+
 
 #include <string>
 #include <ostream>
-#include "IPaymentSender.h"
+#include <iostream>
+#include <sstream>
+using namespace std;
 
 /**
  * Abstract Class of Person
  */
 class Person {
-public:
-
-    // Constructors
-    Person();
-    Person(const std::string &firstName, const std::string &lastName, int documentId);
-    virtual ~Person() = default;
-
-    // Gets and Sets
-    const std::string &getFirstName() const;
-
-    void setFirstName(const std::string &firstName);
-
-    const std::string &getLastName() const;
-
-    void setLastName(const std::string &lastName);
-
-    int getDocumentId() const;
-
-    void setDocumentId(int documentId);
-
-    std::string processPayment(IPaymentSender* paymentSender);
-
-    virtual std::string toString() const; // Virtual
 private:
-    std::string firstName;
-    std::string lastName;
-    int documentId;
+    string firstName;
+    string lastName;
+    int documentld;
+
+public:
+    Person(const string &firstName, const string &lastName, int documentld);
+    Person();
+    virtual ~Person();
+
+    const string &getFirstName() const;
+
+    void setFirstName(const string &firstName);
+
+    const string &getLastName() const;
+
+    void setLastName(const string &lastName);
+
+    int getDocumentld() const;
+
+    void setDocumentld(int documentld);
+
+    virtual double salary() = 0;
+    virtual string toString();
 };
 
-#endif //UNIT_TESTING_01_BASIC_PERSON_H
+
+#endif //LAB02_OOP_PERSON_H

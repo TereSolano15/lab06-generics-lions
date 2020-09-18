@@ -1,43 +1,53 @@
+
 //
-// Created by Maikol Guzman on 8/20/20.
+// Created by Maikol Guzman on 8/2/20.
 //
 
 #include "Person.h"
 
-Person::Person() {}
 
-Person::Person(const std::string &firstName, const std::string &lastName, int documentId) : firstName(firstName),
-                                                                                            lastName(lastName),
-                                                                                            documentId(documentId) {}
+Person::Person() {
 
-const std::string &Person::getFirstName() const {
+}
+
+Person::Person(const string &firstName, const string &lastName, int documentld) : firstName(firstName),
+                                                                                  lastName(lastName),
+                                                                                  documentld(documentld) {}
+
+Person::~Person() {
+
+}
+
+const string &Person::getFirstName() const {
     return firstName;
 }
 
-void Person::setFirstName(const std::string &firstName) {
+void Person::setFirstName(const string &firstName) {
     Person::firstName = firstName;
 }
 
-const std::string &Person::getLastName() const {
+const string &Person::getLastName() const {
     return lastName;
 }
 
-void Person::setLastName(const std::string &lastName) {
+void Person::setLastName(const string &lastName) {
     Person::lastName = lastName;
 }
 
-int Person::getDocumentId() const {
-    return documentId;
+int Person::getDocumentld() const {
+    return documentld;
 }
 
-void Person::setDocumentId(int documentId) {
-    Person::documentId = documentId;
+void Person::setDocumentld(int documentld) {
+    Person::documentld = documentld;
 }
 
-std::string Person::processPayment(IPaymentSender* paymentSender) {
-    return paymentSender->sendPayment();
+string Person::toString() {
+    stringstream s;
+    s << "\t Professor information: " << this->firstName <<" "<<this->lastName<<endl;
+    s << "\t Doc ID:" << this->documentld <<" , ";
+    return s.str();
 }
 
-std::string Person::toString() const {
-    return getFirstName() + " " + getLastName() + "\nDoc Id: " + std::to_string(getDocumentId());
-}
+
+
