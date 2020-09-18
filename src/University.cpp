@@ -18,8 +18,8 @@ University::~University() {
 
 }
 
-template<class T>
-const string T University::getName() const {
+
+const string &University::getData() const {
     return data;
 }
 
