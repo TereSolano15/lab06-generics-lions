@@ -7,10 +7,16 @@
 
 
 #include "IPaymentSender.h"
+#include <iostream>
+using namespace std;
+#include <type_traits>
 
-class CashSender : public IPaymentSender {
-    std::string sendPayment() const override;
+class CashSender : public IPaymentSender <string>{
+    std::string sendPayment() const {
+            return "Give the money in the hands";
+    }
 };
+
 
 
 #endif //LAB05_DEPENDENCY_INVERSION_SOLUTION_CASHSENDER_H

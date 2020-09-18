@@ -15,7 +15,7 @@ public:
 
     virtual T sendPayment() const = 0;
 
-    virtual ~IPaymentSender();
+   // virtual ~IPaymentSender();
 };
 
 

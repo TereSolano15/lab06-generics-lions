@@ -4,6 +4,6 @@
 
 #include "IPaymentSender.h"
 
-IPaymentSender::~IPaymentSender() {
+//IPaymentSender::~IPaymentSender() {
 
-}
+//}

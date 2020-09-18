@@ -4,6 +4,7 @@
 
 #include "CheckSender.h"
 
-std::string CheckSender::sendPayment() const {
-    return "Sending the check with the money";
-}
+//template<class T>
+//std::string CheckSender::sendPayment() const {
+ //   return "Sending the check with the money";
+//}
