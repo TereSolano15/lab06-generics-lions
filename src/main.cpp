@@ -17,10 +17,10 @@ Administrative a1("Marta","Rojas", 272923934, 800000);
 Administrative a2("Andrea","Jaramillo", 272923933, 500000.00);
 
 University university("sipah");
-university.addProfessor(p1);
-university.addProfessor(p2);
-university.addAdministrative(a1);
-university.addAdministrative(a2);
+//university.addProfessor(p1);
+//university.addProfessor(p2);
+//university.addAdministrative(a1);
+//university.addAdministrative(a2);
 
  vector<Professor> professorList = university.getListProfessor();
     for (int i = 0; i < professorList.size(); i ++) {
@@ -28,10 +28,10 @@ university.addAdministrative(a2);
     }
     cout << std::endl;
 
-    vector<Administrative> administrativeList = university.getListAdministrative();
-    for (int j = 0; j < administrativeList.size(); j ++) {
-        cout << "Administrative " << administrativeList[j].toString() << "\n"; //mas cambios
-    }
+//    vector<Administrative> administrativeList = university.getListAdministrative();
+  //  for (int j = 0; j < administrativeList.size(); j ++) {
+    //    cout << "Administrative " << administrativeList[j].toString() << "\n"; //mas cambios
+    //}
 // hola
 }
 //hola este es cambio

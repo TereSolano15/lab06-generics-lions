@@ -5,7 +5,6 @@
 #include "Professor.h"
 #include "Administrative.h"
 
-template <class T>
 class University {
 private:
     string name;
@@ -27,10 +26,9 @@ public:
     Administrative *getAdministrative() const;
     void setAdministrative(Administrative *administrative);
     const vector<Professor> getListProfessor();
+    template <class T>
     void insert(T*);
-    //void addProfessor(Professor);
-    //const vector<Administrative> getListAdministrative();
-    //void addAdministrative(Administrative);
+    
 
 
 };
