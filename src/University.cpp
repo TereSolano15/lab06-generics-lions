@@ -20,8 +20,9 @@ const string &University<T>::getData() const {
 }
 
 template<class T>
-void University<T>::agregar(T* data){
+string University<T>::agregar(T* data){
     push_back(data);
+    return "Agregado";
 }
 
 

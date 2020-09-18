@@ -8,11 +8,10 @@
 #include "gtest/gtest.h"
 
 TEST(UniversityTestSuite, VerifyUniversityProcess){
+
     Professor* p1 = new Professor("Antonio", "Banderas", 1, 2, 3);
-   vector<Professor> professorlist;
-
-
-
-
+    University<Professor>(professorlist);
+    professorlist.agregar(p1);
+    EXPECT_EQ(professorlist.agregar(p1),"Agregado");
 
 }

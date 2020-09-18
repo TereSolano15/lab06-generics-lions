@@ -14,7 +14,7 @@ public:
     University();
     virtual ~University();
     const string &getData() const;
-    void agregar(T*);
+    string agregar(T*);
 
 
 
