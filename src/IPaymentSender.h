@@ -12,8 +12,8 @@
 template<class T>
 class IPaymentSender {
 public:
-    template<class T>
-    auto <T> sendPayment() const = 0;
+
+    virtual T sendPayment() const = 0;
 
     virtual ~IPaymentSender();
 };
