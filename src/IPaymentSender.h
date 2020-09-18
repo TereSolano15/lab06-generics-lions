@@ -7,10 +7,12 @@
 
 
 #include <string>
+#include <type_traits>
 
+template<class T>
 class IPaymentSender {
 public:
-    virtual std::string sendPayment() const = 0;
+    virtual std::T sendPayment() const = 0;
 
     virtual ~IPaymentSender();
 };
