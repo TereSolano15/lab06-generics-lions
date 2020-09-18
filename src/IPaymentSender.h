@@ -9,11 +9,11 @@
 #include <string>
 #include <type_traits>
 
-
+template<class T>
 class IPaymentSender {
 public:
     template<class T>
-    virtual std::<T> sendPayment() const = 0;
+    auto <T> sendPayment() const = 0;
 
     virtual ~IPaymentSender();
 };
