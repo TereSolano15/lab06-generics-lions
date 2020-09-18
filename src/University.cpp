@@ -52,12 +52,18 @@ const vector<Professor> University::getListProfessor() {
     return professorList;
 }
 
-void University::addProfessor(Professor pro){
-  professorList.push_back(pro);
+template<class T>
+void insert<T>::insert(T* dato){
+    administrativeList.push_back(admin);
 }
 
-const vector<Administrative> University::getListAdministrative() {
-    vector<Administrative> administrativeListReturn;
+//template<class T>
+//void Lista<T>::ingresarPrimero(T* dato) {
+  //  primero = new Nodo<T>(dato, primero);
+//}
+template <class T>
+const vector<T> University::getListAdministrative() {
+    vector<T> administrativeListReturn;
 
     for (int cont = 0; cont < administrativeList.size(); cont++) {
         administrativeListReturn.push_back(administrativeList[cont]);
