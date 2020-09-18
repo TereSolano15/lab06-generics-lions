@@ -4,28 +4,16 @@
 #include <vector>
 #include "Professor.h"
 #include "Administrative.h"
-
+template<class T>
 class University {
 private:
-    T data;
-    Professor* professor;
-    Administrative* administrative;
-    vector<Professor> professorList;
-    vector<Administrative> administrativeList;
+
+    vector<T> lista;
 
 public:
-    University(const string &name, Professor *professor, Administrative *administrative,
-    const vector<Professor> &professorList, const vector<Administrative> &administrativeList);
-    University(const string &name);
     University();
     virtual ~University();
     const string &getData() const;
-    Professor *getProfessor() const;
-    void setProfessor(Professor *professor);
-    Administrative *getAdministrative() const;
-    void setAdministrative(Administrative *administrative);
-    const vector<Professor> getListProfessor();
-    template <class T>
     void insert(T*);
 
 
